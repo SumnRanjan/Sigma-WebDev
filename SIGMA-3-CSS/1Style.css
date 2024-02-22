@@ -1,0 +1,57 @@
+/* Element Selector */
+h1{
+    color: red;
+}
+
+/* Class Selector - many element */
+.redtext{
+    color: red;
+}
+
+/* Id Selector - one element */
+#main{
+    color: cyan;
+}
+
+/*Attribute Selector*/
+p[draggable="false"]{
+    color: chartreuse;
+}
+
+/* Universal Selector*/
+*{
+    color: chocolate;
+}
+
+/* Child Selector */
+div > p{
+    color: brown;
+}
+
+/* Descendant Selector */
+div p
+{
+    color: saddlebrown;
+}
+
+/* Pseudo Selector */
+a:visited{
+    color: black;
+}
+
+a:link{
+    background-color: burlywood;
+}
+
+a:active
+{
+    background-color: blue;
+}
+
+a:hover{
+    background-color: yellow;
+}
+
+p:first-child{
+    color: sienna;
+}

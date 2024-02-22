@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        /* .box:first-child{
+            background-color: aliceblue;
+        } */
+
+        /* .box::first-line{
+            color: red;
+        } */
+
+        /* .boxes *{
+            color: blueviolet;
+            border: 2px solid black;
+        }
+
+        p,a, .box ,[data-color="primary"]{
+            padding-top: 45px;
+        } */
+
+        /* .box:nth-child(odd){
+            color: blue;
+        } */
+
+        /* .box:nth-last-child(2){
+            background-color: red;
+        } */
+
+        .boxes::before{
+            content: "HEy boy Sunman";
+            color: rgb(2, 62, 62);
+        }
+
+        .boxes::after{
+            content: "Hey vro";
+            color: brown;
+        }
+
+        ::selection{
+            color: aqua;
+            background-color: black;
+        }
+
+        .box::first-letter{
+            color: palegoldenrod;
+        }
+
+        input::placeholder{
+            color: blue;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">I am first box Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum non sunt nulla soluta sed nisi neque totam fugit rem optio, atque distinctio minima nobis perferendis facilis ut provident vero quis.</div>
+        <div class="box">Lorem ipsum dolor sit amet.</div>
+        <div class="box">Lorem ipsum dolor sit amet.</div>
+        <div class="box">Lorem ipsum dolor sit amet.</div>
+        <div class="box">Lorem ipsum dolor sit amet.</div>
+
+        <input type="text" placeholder="Type your name">
+    </div>
+</body>
+</html>

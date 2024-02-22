@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varibles</title>
+    <style>
+        :root{
+            --color:rgb(157, 163, 163);
+            --secolor:rgb(126, 146, 146);
+            --defpad:23px;
+            --defop:0.2;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        nav{
+            background-color: var(--color , blue);
+        }
+
+        ul{
+            display: flex;
+        }
+
+        ul li{
+            opacity: var(--defop);
+            list-style: none;
+            padding: var(--defpad);
+            border: 12px solid var(--secolor);
+        }
+
+        ul li:first-child{
+            --color:rgb(211, 18, 18);
+            background-color: var(--color,blue);
+        }
+
+        .box{
+            background-color: var(--secolor);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Login</li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="box">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, ab? Rerum doloremque repudiandae saepe cupiditate repellat non temporibus tenetur, est consequatur necessitatibus nihil dicta ipsum quos totam ipsa possimus hic!m
+    </div>
+</body>
+</html>

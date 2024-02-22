@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+
+        .main {
+            display: flex;
+            gap: 40%;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+
+        nav ul {
+            display: flex;
+            margin: 15px;
+        }
+
+        nav ul li {
+            list-style: none;
+            padding: 20px;
+            font-size: 20px;
+        }
+
+        nav ul a {
+            text-decoration: none;
+        }
+
+        nav ul a:hover {
+            color: burlywood;
+        }
+
+        .Contain {
+            position: relative;
+            top: 12vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5vh;
+            text-align: center;
+        }
+
+        .p p {
+            font-size: 50px;
+        }
+
+        .p2 p {
+            font-size: 28px;
+            width: 70vw;
+        }
+
+        .Contain button {
+            padding: 15px;
+            color: white;
+            background-color: #00B6D1;
+            border: none;
+            border-radius: 7px;
+            font-weight: bold;
+        }
+
+        .box {
+            display: grid;
+            grid-template-columns: repeat(3, 350px);
+            grid-template-rows: repeat(3, 170px);
+            row-gap: 20px;
+            column-gap: 20px;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .item {
+            width: 350px;
+            height: 170px;
+            background-color: rgb(219, 240, 240);
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .item .btn {
+            padding: 15px;
+            color: white;
+            background-color: #00B6D1;
+            border: none;
+            border-radius: 7px;
+            font-weight: bold;
+            margin: 5px;
+        }
+
+        .item .btn1 {
+            background-color: #51B85C;
+
+        }
+
+        .item button a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="logo"><img src="UE-Logo-1.webp" alt="" width="150px"></div>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="Contain">
+        <div class="p">
+            <p>Download <b>UltraEdit </b>for Windows </p>
+        </div>
+        <div class="p2">
+            <p>Download and try UltraEdit before you buy it! This download includes the full Windows version of the text
+                editor.</p>
+        </div>
+
+        <div class="button">
+            <button>DOWNLOAD MAC OR LINUX VERSION</button>
+        </div>
+
+        <div class="box">
+            <div class="item">
+                <h1>English</h1>
+                <div>
+                    <button class="btn"><a href="ue_english.exe">Download 32-bit</a></button>
+                    <button class=" btn btn1"><a href="ue_english.exe">Download 64-bit</a></button>
+                </div>
+
+            </div>
+            <div class="item">
+                <h1>Deutsch</h1>
+                <p>German</p>
+                <div>
+                    <button class="btn"><a href="ue_english.exe">Download 32-bit</a></button>
+                    <button class=" btn btn1"><a href="ue_english.exe">Download 64-bit</a></button>
+                </div>
+            </div>
+            <div class="item">
+                <h1>Italiano</h1>
+                <p>Italian</p>
+                <div>
+                    <button class="btn"><a href="ue_english.exe">Download 32-bit</a></button>
+                    <button class=" btn btn1"><a href="ue_english.exe">Download 64-bit</a></button>
+                </div>
+            </div>
+            <div class="item">
+                <h1>Español</h1>
+                <p>Spanish</p>
+                <div>
+                    <button class="btn"><a href="ue_english.exe">Download 32-bit</a></button>
+                    <button class=" btn btn1"><a href="ue_english.exe">Download 64-bit</a></button>
+                </div>
+            </div>
+            <div class="item">
+                <h1>français</h1>
+                <p>French</p>
+                <div>
+                    <button class="btn"><a href="ue_english.exe">Download 32-bit</a></button>
+                    <button class=" btn btn1"><a href="ue_english.exe">Download 64-bit</a></button>
+                </div>
+            </div>
+            <div class="item">
+                <h1>Português brasileiro</h1>
+                <p>Brazilian Portuguese</p>
+                <div>
+                    <button class="btn"><a href="ue_english.exe">Download 32-bit</a></button>
+                    <button class=" btn btn1"><a href="ue_english.exe">Download 64-bit</a></button>
+                </div>
+            </div>
+            <div class="item">
+                <h1>日本</h1>
+                <p>Japanese</p>
+                <div>
+                    <button class="btn"><a href="ue_english.exe">Download 32-bit</a></button>
+                    <button class=" btn btn1"><a href="ue_english.exe">Download 64-bit</a></button>
+                </div>
+            </div>
+            <div class="item">
+                <h1>한국어</h1>
+                <p>Kerean</p>
+                <div>
+                    <button class="btn"><a href="ue_english.exe">Download 32-bit</a></button>
+                    <button class=" btn btn1"><a href="ue_english.exe">Download 64-bit</a></button>
+                </div>
+            </div>
+            <div class="item">
+                <h1>中国</h1>
+                <p>Chinese</p>
+                <div>
+                    <button class="btn"><a href="ue_english.exe">Download 32-bit</a></button>
+                    <button class=" btn btn1"><a href="ue_english.exe">Download 64-bit</a></button>
+                </div>
+            </div>
+            <div class="item">
+                <h1>中国</h1>
+                <p>Traditional Chinese</p>
+                <div>
+                    <button class="btn"><a href="ue_english.exe">Download 32-bit</a></button>
+                    <button class=" btn btn1"><a href="ue_english.exe">Download 64-bit</a></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

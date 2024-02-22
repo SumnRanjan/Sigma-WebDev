@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float & Clear</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+        }
+        .card{
+            border: 2px solid red;
+        }
+        img{
+            float: left;
+        }
+
+        .card:nth-child(3){
+            background-color: antiquewhite;
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img width="230px" src="https://media.istockphoto.com/id/988644280/photo/man-with-canoe-on-the-lake.jpg?s=612x612&w=0&k=20&c=3XbXJJ-Ov5MkZle2XO4lmMR0cJvAVnTj5rVC7NC-cDc=" alt="">
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora maiores, natus deserunt architecto in fugit, impedit ipsam rerum molestiae repellat aspernatur nulla doloremque.</div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum omnis porro quis hic totam delectus dolorem illum eos corrupti consequatur commodi blanditiis aut nemo voluptas, aspernatur, temporibus architecto. Dolorum, molestiae.</div>
+        <div class="card">card3</div>
+    </div>
+</body>
+</html>

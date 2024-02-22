@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing</title>
+    <style>
+        *{
+            margin-top: 10;
+            padding: 0;
+        }
+
+        html{
+            font-size: 12px;
+        }
+        .first{
+            border: 2px solid black;
+            width: 80vw; /*vw - */
+            height: 10vh;
+            background-color: wheat;
+            box-sizing: border-box;
+            margin: auto;
+            font-size: 2rem;
+        }
+
+        .second{
+            border: 2px solid black;
+            width: 80vw;
+            height:80vh ;
+            background-color: wheat;
+            box-sizing: border-box;
+            margin:23px auto;
+            font-size: 18px;
+            overflow: scroll;
+        }
+
+        .second p{
+            font-size: 1em;
+            /* width: 50%; */
+        }
+
+        .third{
+            color: yellowgreen;
+            border: 2px solid black;
+            width: 100vmin ;
+            height: 100vmax;
+            margin: 23px auto;
+            font-size: 2rem;
+            width: 50%;
+        }
+
+        .third > div  
+        {
+            border: 2px solid black ;
+            box-sizing: border-box;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="first">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <div class="second">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, suscipit quisquam impedit cupiditate obcaecati aspernatur tenetur placeat, rem dolor nulla harum, qui vero. Corrupti culpa quo nulla, tempora a, rerum sequi, dignissimos vel delectus cumque fugit enim temporibus. Amet, harum aut omnis magnam illum animi veritatis, ea, officiis itaque laboriosam cum quibusdam beatae provident! Fuga!</p>
+    </div>
+
+    <div class="third">
+        i am container three
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, nostrum! Fuga sit dolor error. Architecto dicta blanditiis dolorem nesciunt doloremque, earum ipsa eum ex optio pariatur temporibus voluptates, similique esse?
+        </div>
+    </div>
+</body>
+</html>
