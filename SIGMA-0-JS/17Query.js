@@ -8,4 +8,3 @@ dataAttribute.style.color = "blue"
 console.log(dataAttribute)
 console.log(divwithClass)
 console.log(input)
-
