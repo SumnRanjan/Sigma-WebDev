@@ -38,7 +38,6 @@ console.log(a)
 
 // console.log(isTrue)
 
-
 // const isTrue = a.every(number =>{
 //   return number > 0
 // })

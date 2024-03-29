@@ -3,7 +3,7 @@
 // switch (favAnimal) {
 //   case "bobcat":
 //   case "cat":
-//     console.log("cat is pretty");
+//     console.log("cat is pretty1");
 //     console.log("cat is pretty2");
 //     break;
 //   case "dog":
@@ -16,7 +16,7 @@
 //     console.log("That is cool but i am unfamilier")
 // }
 
-const number = 6 ;
+const number = 6;
 
 switch (number) {
   case 0:
