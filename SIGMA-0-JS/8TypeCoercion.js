@@ -24,6 +24,34 @@
 
 // NAN - NoT a Number
 
-const a = "sdfgb"
-console.log(parseInt(a))
-console.log(parseInt(a) == NaN ) 
+// const a = "sdfgb"
+// console.log(parseInt(a))
+// console.log(parseInt(a) == NaN ) 
+
+// ---------------------------
+
+// let age = "33"
+// console.log(typeof age)
+
+// let value = Number(age)
+// console.log(typeof value)
+
+//" 33 "  -> 33
+// "33abc" -> NaN
+// true -> 1  and false -> 0
+
+// let login = 1;
+
+// let loginvalue = Boolean(login)
+// console.log(loginvalue);
+
+//1-> in Boolean mai true && 0 ->false
+//"" -> false
+//"suman" -> true
+
+
+let number = 33
+
+let stnum = String(number)
+console.log(stnum);
+console.log(typeof stnum);
