@@ -6,7 +6,6 @@
 // // console.log(a)
 // // console.log(typeof a)
 
-
 // let b  = "1.34"
 // console.log(typeof b.toString())
 
@@ -16,17 +15,16 @@
 // console.log(c + d) //print 13
 // console.log(c + parseInt(d))
 
-
 // == / === compare  !== / == / != / >=
 // const a = 1;
 // const b = "1";
-// console.log(a === b); 
+// console.log(a === b);
 
 // NAN - NoT a Number
 
 // const a = "sdfgb"
 // console.log(parseInt(a))
-// console.log(parseInt(a) == NaN ) 
+// console.log(parseInt(a) == NaN )
 
 // ---------------------------
 
@@ -49,32 +47,30 @@
 //"" -> false
 //"suman" -> true
 
+let number = 33;
 
-let number = 33
-
-let stnum = String(number)
+let stnum = String(number);
 // console.log(stnum);
 // console.log(typeof stnum);
-
 
 // -----------------------------------------
 
 // console.log("1" + 2)
 
-// console.log(1 + "2") 
- 
+// console.log(1 + "2")
+
 // console.log("1" + "2")
 
 // console.log("1" + 2 + 3)
 
 // console.log(3 + 1 + "2")
 
-// ouput 
+// ouput
 // 12
 // 12
 // 12
 // 123
 // 42
 
-console.log(+true)
+console.log(+true);
 console.log(+"");
