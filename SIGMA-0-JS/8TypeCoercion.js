@@ -53,5 +53,28 @@
 let number = 33
 
 let stnum = String(number)
-console.log(stnum);
-console.log(typeof stnum);
+// console.log(stnum);
+// console.log(typeof stnum);
+
+
+// -----------------------------------------
+
+// console.log("1" + 2)
+
+// console.log(1 + "2") 
+ 
+// console.log("1" + "2")
+
+// console.log("1" + 2 + 3)
+
+// console.log(3 + 1 + "2")
+
+// ouput 
+// 12
+// 12
+// 12
+// 123
+// 42
+
+console.log(+true)
+console.log(+"");
