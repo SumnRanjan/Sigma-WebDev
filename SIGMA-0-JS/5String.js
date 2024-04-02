@@ -66,6 +66,6 @@
 
 // ---------------------------------------------------------
 
-console.log(Math.random()) 
+console.log(Math.random())  //generate no
 
 console.log(Math.floor(Math.random() * 10)) + 1
