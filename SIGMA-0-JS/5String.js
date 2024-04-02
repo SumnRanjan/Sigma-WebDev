@@ -1,4 +1,4 @@
-console.log("This is sting tutorial");
+// console.log("This is sting tutorial");
 
 // let a = "suman";
 
@@ -36,7 +36,36 @@ console.log("This is sting tutorial");
 // let newc = c.trim()
 // console.log(newc)
 
-let s = `Suman`
-let r = `Ranjan`
+// let s = `Suman`
+// let r = `Ranjan`
 
-console.log(`${s} ${r}`)
+// console.log(`${s} ${r}`)
+
+// --------------------------------------
+// Method of string
+
+
+// let str =  "   my name is  suman   "
+// console.log(str.trim()); // remove extra space 
+// console.log(str.trim().toUpperCase());
+
+// let tvshow = "catdog"
+// console.log(tvshow.indexOf('at')); //give the index 
+
+
+// let line = "haha that was so funny"
+// console.log(line.slice(5)) //remove first five element and give rest of the string
+// console.log(line.slice(5,9)) 
+// console.log(line.slice(-5))
+
+
+// console.log(line.replace('haha' , 'lol'))
+
+// console.log(line.repeat(2))
+
+
+// ---------------------------------------------------------
+
+console.log(Math.random()) 
+
+console.log(Math.floor(Math.random() * 10)) + 1
