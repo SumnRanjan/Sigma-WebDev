@@ -63,7 +63,6 @@
 //   [7, 8, 9],
 // ];
 
-
 // for(let  i = 0 ; i < l.length ; i++){
 //     const row = l[i]
 //     for(let j = 0 ; j < row.length ; j++){
@@ -71,15 +70,13 @@
 //     }
 // }
 
-
-//while loop 
+//while loop
 
 // let l = 0
 // while( l <= 10){
 //     l++;
 //     console.log(l)
 // }
-
 
 // const s = "sim"
 // let guess = prompt("enter")
@@ -88,7 +85,6 @@
 //     guess = prompt("enter")
 // }
 // console.log('congo')
-
 
 //break
 
@@ -99,3 +95,74 @@
 
 // }
 // console.log("You Win")
+
+// for of looop
+
+// const substring = [
+//   "cringe",
+//   "books",
+//   "hacked",
+//   "funny",
+//   "pics",
+//   "soccer",
+//   "love",
+// ];
+
+// for (let i = 0; i < substring.length; i++) {
+//   console.log(`visit reddit.com/r/${substring[i]}`);
+// }
+
+// // now for of loop
+
+// for (let sub of substring) {
+//   console.log(`visit reddit.com/r/${sub}`);
+// }
+
+
+// const l = [
+//       [1, 2, 3],
+//       [4, 5, 6],
+//       [7, 8, 9],
+//     ];
+
+//     for(let row of l){
+//         for(let student of row){
+//             console.log(student)
+//         }
+//     }
+
+
+// for (let char of  "hello"){
+//     console.log(char)
+// }
+
+
+
+const test = {
+    suman : 10,
+    sunaina : 20,
+    sumit : 30,
+    kim : 40,
+    nadia : 5,
+    suraj : 14,
+    love : 100,
+    rudra : 55
+}
+
+// for in loop
+// for(let person in test){
+//     console.log(`${person} scored ${test[person]}`)
+// }
+
+
+// //convert into arry
+// console.log(Object.keys(test))
+// console.log(Object.values(test))
+// console.log(Object.entries(test))
+
+let total = 0
+for(let score of Object.values(test) ){
+    total = total + score
+}
+
+console.log(total)
