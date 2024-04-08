@@ -29,7 +29,7 @@
 // // func1(52)
 // // func1(42)
 
-// // something new 
+// // something new
 // function PrintVariable(variable) {
 //     console.log(variable);
 // }
@@ -38,7 +38,7 @@
 //     x("hello world");
 // }
 
-// func(PrintVariable); //passing the function 
+// func(PrintVariable); //passing the function
 
 // //
 // function sumcallback(a, b, callback) {
@@ -51,7 +51,7 @@
 
 // sumcallback(1, 2, handleSum);
 
-// // anonymous function 
+// // anonymous function
 // function printName(name, callback) {
 //     callback("hello " + name)
 // }
@@ -71,16 +71,14 @@
 // //same as sumArrow if there is only one arguement we can pass arrow function like sumArrow1
 // let sumArrow1 = (a, b) =>  a + b;
 
-
 // console.log(sumArrow(3,4))
 // console.log(sumArrow1(3,4))
 // console.log(sum(1, 2))
 
-
 // // function PrintName(name){
 // //     console.log(name)
 // // }
- 
+
 // // let Printname = name =>{
 // //     console.log(name);
 // // }
@@ -115,7 +113,6 @@
 // func1(10 , (variable) => {
 //     console.log(variable)
 // })
-
 
 // //  scoping
 
@@ -159,7 +156,6 @@
 
 // repeat('hi' , 3)
 
-
 //return type
 
 // function sum(num1 , num2){
@@ -168,7 +164,7 @@
 
 // console.log(sum(2,5))
 
-//scope
+//scope----------------------------------------
 
 // const bird = "hey"
 
@@ -179,8 +175,75 @@
 // console.log(bird)
 // heHi();
 
-for(let i = 0 ; i < 2 ; i++){
-    var msg = "oye" // when we we use var msg is avalible out of the scope
-}
-// let and const are block scope
-console.log(msg)
+// for(let i = 0 ; i < 2 ; i++){
+//     var msg = "oye" // when we we use var msg is avalible out of the scope
+// }
+// // let and const are block scope
+// console.log(msg)
+
+//  Lexical Scope
+
+// function bankRobbery(){
+//     const heroes = ['Spiderman' , 'Ironman' , 'Black Panther' , 'Wolverine']
+//     function cryForHelp(){
+//         for(let hero of heroes){
+//             console.log(`PLEASE HELP US , ${hero.toUpperCase()}` );
+//         }
+//     }
+//     cryForHelp();
+// }
+
+// bankRobbery()
+
+//Function expression
+
+// function add(x, y) {
+//   return x + y;
+// }
+
+// console.log(add(10 , 20))
+
+// const Add = function add(x, y) {
+//     return x + y;
+//   }
+
+// let add = Add(40,50)
+
+// console.log(add)
+
+// --Higher Order function
+
+// function callTwice(func){
+//   func();
+//   func()
+// }
+
+  
+// function rollDie(){
+//   const roll = Math.floor(Math.random() * 6) + 1
+//   console.log(roll)
+// }
+
+// callTwice(rollDie)
+
+// function makeMysteryFun(){
+//   const rand = Math.random();
+//   if(rand > 0.5) {
+//     return function(){
+//       console.log("CONGRAT ,  I AM A GOOD FUNCTION !")
+//       console.log("YOU WIN TEN RUPEE")
+//     }
+//   } else{
+//     return function (){
+//       alert("YOU HAVE BEEN INFECTED BY A COMPUTER VIRUS")
+//       alert("STOP TRYING TO CLOSE THIS WINDOW")
+//       alert("STOP TRYING TO CLOSE THIS WINDOW")
+//       alert("STOP TRYING TO CLOSE THIS WINDOW")
+//       alert("STOP TRYING TO CLOSE THIS WINDOW")
+//     }
+//   }
+// }
+
+
+// -------------
+
