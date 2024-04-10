@@ -172,27 +172,106 @@
 
 // console.log(id)
 
-const movies = [
-    {
-        title : 'Amadeus',
-        score: 99
-    },
-    {
-        title : 'Stand By Me',
-        score: 85
-    },
-    {
-        title : 'Parasite',
-        score: 95
-    },
-    {
-        title : 'Alien',
-        score: 90
+// const movies = [
+//     {
+//         title : 'Amadeus',
+//         score: 99
+//     },
+//     {
+//         title : 'Stand By Me',
+//         score: 85
+//     },
+//     {
+//         title : 'Parasite',
+//         score: 95
+//     },
+//     {
+//         title : 'Alien',
+//         score: 90
+//     }
+// ]
+
+// const goodMovie = movies.filter(movie => movie.score > 85)
+// const goodTitles = goodMovie.map(m => m.title)
+
+// // console.log(goodMovie)
+// confirm.log(goodTitles)
+
+
+// 4every
+
+// const number = [1,2,3,4,5,6,7,8]
+
+// number.every(score => score >= 5)
+
+// //some
+// const movies = [
+//         {
+//             title : 'Amadeus',
+//             score: 99
+//         },
+//         {
+//             title : 'Stand By Me',
+//             score: 85 
+//         },
+//         {
+//             title : 'Parasite',
+//             score: 95
+//         },
+//         {
+//             title : 'Alien',
+//             score: 90
+//         }
+//     ]
+// movies.some (movie => movie.score > 95 )
+
+//reduce 
+
+const price = [9.99 , 1.50 , 19.99 , 30.50]
+
+// const total = price.reduce ((total , price) =>{
+//     return total + price;
+// })
+
+// console.log(total)
+
+const mini = price.reduce((min , price )=>{
+    if(price < min){
+        return price;
     }
-]
+    return min
+})
 
-const goodMovie = movies.filter(movie => movie.score > 85)
-const goodTitles = goodMovie.map(m => m.title)
+console.log(mini);
 
-// console.log(goodMovie)
-confirm.log(goodTitles)
+
+const movies = [
+        {
+            title : 'Amadeus',
+            score: 99
+        },
+        {
+            title : 'Stand By Me',
+            score: 85 
+        },
+        {
+            title : 'Parasite',
+            score: 95
+        },
+        {
+            title : 'Alien',
+            score: 90
+        }
+    ]
+
+    const movi = movies.reduce((bestMovie , currMovies)=>{
+        if(currMovies.score > bestMovie.score){
+            return currMovies
+        }
+        return bestMovie
+    })
+
+console.log(movi);
+const even = [ 2,4,6,8]
+
+even.reduce((sum , num) => sum + num ,100)

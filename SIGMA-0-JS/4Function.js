@@ -331,3 +331,22 @@
 
 // const add = (a,b) => a + b
 // console.log(add(4,4))
+
+
+//arrow function with this
+
+const person ={
+    firstname : 'suman',
+    lastname : 'ranjan',
+    //this will not work give undefine
+    fullname: () => {
+        return `${this.firstname } ${this.lastname}`
+    },
+    shoutName: function(){
+        setTimeout( () => {
+            console.log(this.fullname())
+        }, 3000);
+    }
+}
+
+console.log(person.shoutName())
