@@ -218,7 +218,6 @@
 //   func()
 // }
 
-  
 // function rollDie(){
 //   const roll = Math.floor(Math.random() * 6) + 1
 //   console.log(roll)
@@ -244,6 +243,91 @@
 //   }
 // }
 
+// // -------------
+// function makeBetween(min , max )
+// {
+//     return function (num){
+//         return num >= min && num <= num;
+//     }
+// }
 
-// -------------
+// const adult = makeBetween(1 ,20)
 
+// Method and function
+// every method is function  but every function is not method
+// // short hand
+// const myMath = {
+//     PI : 3.14,
+//     square (num){
+//         return num * num
+//     },
+//     cube (num){
+//         return num ** 3
+//     }
+// }
+
+// console.log(myMath.square(8))
+// console.log(myMath["cube"](4))
+
+//this keyword
+
+// const cat = {
+//     name : 'Blue Steele',
+//     color : 'grey',
+//     breed : 'scottish fold',
+//     meow (){
+//         console.log(`${this.name} Say Meow`)
+//     }
+// }
+
+// console.log(cat.meow())
+
+// Try and catch
+
+// try {
+//     hello.toUpperCase()
+// } catch{
+//     console.log("error")
+// }
+
+// console.log("After")
+
+// function yell (msg){
+//     try{
+//         console.log(msg.toUpperCase().repeat(3))
+//     } catch(e){
+//         console.log("PLS PASS A VAILD STRING")
+//     }
+// }
+
+// yell(456)
+
+//Arrow Function --------
+
+// const add = (x, y) => {
+//   return x + y
+// }
+
+// console.log(add(5,5))
+
+// const square = x => {
+//     return x * x
+// }
+
+// console.log(square(6))
+
+// const rollDie = () => {
+//     return Math.floor(Math.random() * 6) + 1
+// }
+
+// console.log(rollDie())
+
+
+
+// const rollDie = () => (
+//     Math.floor(Math.random() * 6) + 1
+// )
+// console.log(rollDie())
+
+// const add = (a,b) => a + b
+// console.log(add(4,4))
