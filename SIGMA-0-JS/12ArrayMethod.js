@@ -1,5 +1,4 @@
-
-// //Array Method ----- 
+// //Array Method -----
 
 // const a = [1,2,3,4,5]
 // const b = [2,4,6,8,10]
@@ -44,13 +43,11 @@
 
 // console.log(isTrue)
 
-
 // const sum = a.reduce((sum , number) =>{
 //   return sum + number;
 // },0)
 
 // console.log(sum)
-
 
 // const items =[
 //   {price : 10},
@@ -66,10 +63,8 @@
 
 // console.log(total)
 
-
 // const  isTrue = a.includes(2)
 // console.log(isTrue)
-
 
 // Arrow Mehtod && callback
 
@@ -108,8 +103,6 @@
 // movies.forEach(function(movie){
 //     console.log(`${movie.title} - ${movie.score}/100`)
 // })
-
-
 
 //2. Map - return new arry
 
@@ -197,7 +190,6 @@
 // // console.log(goodMovie)
 // confirm.log(goodTitles)
 
-
 // 4every
 
 // const number = [1,2,3,4,5,6,7,8]
@@ -212,7 +204,7 @@
 //         },
 //         {
 //             title : 'Stand By Me',
-//             score: 85 
+//             score: 85
 //         },
 //         {
 //             title : 'Parasite',
@@ -225,53 +217,153 @@
 //     ]
 // movies.some (movie => movie.score > 95 )
 
-//reduce 
+//reduce
 
-const price = [9.99 , 1.50 , 19.99 , 30.50]
+// const price = [9.99 , 1.50 , 19.99 , 30.50]
 
-// const total = price.reduce ((total , price) =>{
-//     return total + price;
+// // const total = price.reduce ((total , price) =>{
+// //     return total + price;
+// // })
+
+// // console.log(total)
+
+// const mini = price.reduce((min , price )=>{
+//     if(price < min){
+//         return price;
+//     }
+//     return min
 // })
 
-// console.log(total)
+// console.log(mini);
 
-const mini = price.reduce((min , price )=>{
-    if(price < min){
-        return price;
-    }
-    return min
-})
+// const movies = [
+//         {
+//             title : 'Amadeus',
+//             score: 99
+//         },
+//         {
+//             title : 'Stand By Me',
+//             score: 85
+//         },
+//         {
+//             title : 'Parasite',
+//             score: 95
+//         },
+//         {
+//             title : 'Alien',
+//             score: 90
+//         }
+//     ]
 
-console.log(mini);
+//     const movi = movies.reduce((bestMovie , currMovies)=>{
+//         if(currMovies.score > bestMovie.score){
+//             return currMovies
+//         }
+//         return bestMovie
+//     })
+
+// console.log(movi);
+// const even = [ 2,4,6,8]
+
+// even.reduce((sum , num) => sum + num ,100)
+
+// //destructing arry
+// const score = [1000 , 85 , 66 , 78 , 78 , 96]
+
+// const [gold , silver , bronze , ...every] = score
+
+// console.log(gold)
+// console.log(silver)
+// console.log(every)
+
+//destructing object
+
+// const user = {
+//   email: "harvey@gmail.com",
+//   password: "sCoTt1948sMiTh",
+//   firstName: "Harvey",
+//   lastName: "Milk",
+//   born: 1930,
+//   died: 1978,
+//   bio: "Harvey Bernard Milk was an American politician and the first .",
+//   city: "San Francisco",
+//   state: "California",
+// };
+// //const email = user.email
+// const {email , firstName , lastName , bio  } = user;
+// console.log(email)
+// console.log(bio)
+
+// const {born : birthyear , died : deathyear = "N?A"} = user;
+// console.log(birthyear);
+// console.log(deathyear);
+
+// const user2 = {
+//     email : 'sumanranjan@gmail.com',
+//     firstName: "Hary",
+//     lastName: "Milk",
+//     born: 1987,
+//     city : 'newyork',
+//     state : 'oklahoma'
+// }
+
+
+// const {city , state , died = 'NA?'} = user2
+// console.log(died)
+
+//destructing para
+// const user = {
+//     email: "harvey@gmail.com",
+//     password: "sCoTt1948sMiTh",
+//     firstName: "Harvey",
+//     lastName: "Milk",
+//     born: 1930,
+//     died: 1978,
+//     bio: "Harvey Bernard Milk was an American politician and the first .",
+//     city: "San Francisco",
+//     state: "California",
+//   };
+
+// // function fullname (user){
+// //     const {firstName , lastName} = user
+// //     return `${firstName} ${lastName}`
+// // }
+
+// // console.log(fullname(user))
+
+// function fullname({firstName , lastName }){
+//     return `${firstName} ${lastName}`
+// }
 
 
 const movies = [
-        {
-            title : 'Amadeus',
-            score: 99
-        },
-        {
-            title : 'Stand By Me',
-            score: 85 
-        },
-        {
-            title : 'Parasite',
-            score: 95
-        },
-        {
-            title : 'Alien',
-            score: 90
-        }
-    ]
+    {
+        title : 'Amadeus',
+        score: 99
+    },
+    {
+        title : 'Stand By Me',
+        score: 85
+    },
+    {
+        title : 'Parasite',
+        score: 95
+    },
+    {
+        title : 'Alien',
+        score: 90
+    }
+]
 
-    const movi = movies.reduce((bestMovie , currMovies)=>{
-        if(currMovies.score > bestMovie.score){
-            return currMovies
-        }
-        return bestMovie
-    })
+// movies.filter((movie) => movie.score >= 90)
+movies.filter((score) => score >= 90)
 
-console.log(movi);
-const even = [ 2,4,6,8]
 
-even.reduce((sum , num) => sum + num ,100)
+// movies.map(movie =>{
+//     return `${movie.title} ($(movie.title)) is rated ${movie.score}`
+// })
+
+movies.map(({title , score }) =>{
+    return `${title} (${score})`
+})
+

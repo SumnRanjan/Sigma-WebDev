@@ -322,8 +322,6 @@
 
 // console.log(rollDie())
 
-
-
 // const rollDie = () => (
 //     Math.floor(Math.random() * 6) + 1
 // )
@@ -332,21 +330,91 @@
 // const add = (a,b) => a + b
 // console.log(add(4,4))
 
-
 //arrow function with this
 
-const person ={
-    firstname : 'suman',
-    lastname : 'ranjan',
-    //this will not work give undefine
-    fullname: () => {
-        return `${this.firstname } ${this.lastname}`
-    },
-    shoutName: function(){
-        setTimeout( () => {
-            console.log(this.fullname())
-        }, 3000);
-    }
-}
+// const person ={
+//     firstname : 'suman',
+//     lastname : 'ranjan',
+//     //this will not work give undefine
+//     fullname: () => {
+//         return `${this.firstname } ${this.lastname}`
+//     },
+//     shoutName: function(){
+//         setTimeout( () => {
+//             console.log(this.fullname())
+//         }, 3000);
+//     }
+// }
 
-console.log(person.shoutName())
+// console.log(person.shoutName())
+
+//Default Parameters always second
+
+// function rollDie(numSide = 6){
+//     return Math.floor(Math.random() * numSide) + 1
+// }
+
+// console.log(rollDie())
+
+// function greet(person , msg = "Hey There"){
+//     console.log(`${msg} , ${person}`)
+// }
+
+// greet("sumn")
+
+//Spread ...
+
+// console.log(Math.max(13,1,66,45));
+
+// const nums = [10 , 55 , 625 , 45 , 62]
+// console.log(Math.max(...nums));
+// console.log(Math.min(...nums));
+
+// console.log(..."hello")
+
+// const cats = ['blue' , 'scout' , 'rocket']
+// const dogs = ['sumit' , 'love']
+
+// console.log([...cats , ...dogs , 'speed']) // copy ary in new arry
+
+// spread object
+
+// const feline = {legs : 4, family : 'Felidae'}
+// const canine = {isFurry : true , family : 'love'}
+
+// // console.log({...feline , color : 'black'})
+
+// const catDog ={ ...canine , ...feline}
+// const catDog1 ={  ...feline , ...canine}
+// console.log(catDog)
+// console.log(catDog1)
+
+// const s = { ...[1, 2, 3] };
+// console.log(s);
+
+// const dataFrame = {
+//   email: "sumna@gmail.com",
+//   password: "rfgb",
+//   username: "rjf",
+// };
+
+// const newuser = { ...dataFrame, id: 2345, isAdmin: false };
+// console.log(newuser)
+
+
+//agrument hold everythings to it
+//rest
+
+// function sum(...nums){
+//   return nums.reduce((total , el)=> total + el)
+// }
+
+// console.log(sum(2,5,6,5,6))
+
+
+// function race(gold , silver , ...every){
+//     console.log(`Gold medal goes tp : ${gold}`);
+//     console.log(`Gold medal goes tp : ${silver}`);
+//     console.log(`Gold medal goes tp : ${every}`);
+// }
+// race('suman' , 'ted' , 'tiny' , 'su')
