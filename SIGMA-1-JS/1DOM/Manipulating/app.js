@@ -69,19 +69,76 @@
 
 //Changing Style
 
-const h1 = document.querySelector("h1");
-h1.style.color = "blue";
-h1.style.fontSize = "3rem";
-h1.style.border = "2px solid black  ";
+// const h1 = document.querySelector("h1");
+// h1.style.color = "blue";
+// h1.style.fontSize = "3rem";
+// h1.style.border = "2px solid black  ";
 
+// const alllink = document.querySelectorAll("a");
 
-const alllink = document.querySelectorAll("a");
+// for(let link of alllink){
+//     link.style.color = 'hsl(238, 8, 16%)'
+//     link.style.textDecorationColor = 'blue'
+//     link.style.textDecorationStyle = 'wavy'
+// }
 
-for(let link of alllink){
-    link.style.color = 'hsl(238, 8, 16%)'
-    link.style.textDecorationColor = 'blue'
-    link.style.textDecorationStyle = 'wavy'
-}
-
-// window.getComputedStyle(h1) 
+// window.getComputedStyle(h1)
 // window.getComputedStyle(h1).fontSize
+
+// //Class list
+// const h2 = document.querySelector("h2");
+// // h2.getAttribute('class')
+// h2.setAttribute("class", "purple");
+// h2.setAttribute("class", "border");
+// let currentClass = h2.getAttribute("class");
+
+// //best way using class list
+// h2.classList.add("border");
+// h2.classList.remove("border");
+// h2.classList.contains("border");
+// h2.classList.contains("purple");
+
+// h2.classList.toggle('purple') //add and remove
+
+//parent/child
+// const firstBold = document.querySelector('b')
+// // firstBold.parentElement //give first parent of b
+// // firstBold.parentElement.parentElement.parentElement
+
+// const para = firstBold.parentElement
+// // para.childElementCount
+// para.children
+// para.children[0].parentElement
+
+//Sibling
+// const squareimg = document.querySelector('.square')
+// squareimg.nextSibling   //give space line
+// squareimg.nextElementSibling //give next element
+// squareimg.previousSibling
+// squareimg.previousElementSibling //give previous element
+
+//Append and appendchild
+// const newImg = document.createElement('img')
+// newImg.src = 'link'
+// document.body.appendChild(newImg)
+// newImg.classList.add('square')
+// ----------
+// const h3 = document.createElement('h3')
+// h3.innerText = "I am h3"
+// document.body.appendChild(h3)
+
+//append
+// const para = document.querySelector('p')
+// para.append('i am new para')
+// const newB = document.createElement('b')
+// newB.append('HI ')
+// para.prepend(newB)
+
+const h2 = document.createElement("h2");
+h2.append("Are U MAD");
+const h1 = document.querySelector("h1");
+h1.insertAdjacentElement("afterend", h2);
+
+//romve
+const img = document.querySelector('img')
+img.remove()
