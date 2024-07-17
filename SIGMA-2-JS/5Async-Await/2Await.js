@@ -35,7 +35,7 @@ const fakeRequestPromise = (url) => {
             } else {
                 resolve(`Here is your fake data from ${url}`)
             }
-        }, delay)
+        }, delay)       
     })
 }
 
