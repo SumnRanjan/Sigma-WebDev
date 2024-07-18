@@ -131,14 +131,15 @@
 // const para = document.querySelector('p')
 // para.append('i am new para')
 // const newB = document.createElement('b')
-// newB.append('HI ')
-// para.prepend(newB)
+// newB.append('HI ') //add to end
+// para.prepend(newB) //add to start
 
 const h2 = document.createElement("h2");
 h2.append("Are U MAD");
 const h1 = document.querySelector("h1");
-h1.insertAdjacentElement("afterend", h2);
+h1.insertAdjacentElement("afterend", h2);  //beforbegin //beforeend //afterend //afterbegin
+//there is also after & before
 
-//romve
+//remove  
 const img = document.querySelector('img')
 img.remove()
