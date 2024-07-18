@@ -41,5 +41,5 @@ const btn = document.querySelector("#tas");
 // btn.onclick = twist
 // btn.onclick = shout
 
-btn.addEventListener("click", twist , {once : true});
+btn.addEventListener("click", twist , {once : true}); //run onetime once true;
 btn.addEventListener("click", shout);
